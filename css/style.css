@@ -1,0 +1,272 @@
+/** 
+* Theme Name: Agadi 
+* Theme Author: DevSyed 
+**/ 
+
+/** 
+* Importing Fonts 
+**/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/** Global Styles **/
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/** Topbar Styles **/
+.topbar-wrapper{
+    background-color: #FDB165;
+    padding:10px;
+}
+.topbar-wrapper p {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+}
+
+.topbar-wrapper ul.social-icons {
+    padding: 0;
+    margin: 0;
+}
+.topbar-wrapper ul#right-icons {
+    text-align: right;
+}
+.topbar-wrapper ul.social-icons li {
+    display: inline;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.topbar-wrapper ul.social-icons li a {color: #fff;}
+
+
+/** 
+Header Styles **/
+header button#search {
+    background: none;
+    border: none;
+}
+
+header button#search img {
+    max-width: 22px;
+}
+
+header {
+    padding: 25px 0px 0px 0px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+header .logo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+header a.logo_text {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FDB165;
+    text-decoration: none;
+}
+
+.logo-comp {display: inline-flex;position: relative;right: 10px;}
+
+.logo-comp span#three img {width: 35px;}
+
+.logo-comp span#three {
+    position: relative;
+    top: -15px;
+    transition:all .2s ease-in;
+}
+
+span#two img {
+    width: 25px;
+}
+
+span#two {
+    position: relative;
+    left: 20px;
+    top: 0px;
+    transition:all .2s ease-in;
+}
+
+span#one {
+    position: relative;
+    left: 72px;
+    top: -22px;
+    transition:all .2s ease-in;
+}
+
+span#one img {
+    width: 28px;
+}
+
+.logo:hover span#two {
+    left: 60px;
+    top: -30px;
+    transition:all .2s ease-in;
+}
+
+.logo:hover span#one {
+    left: 20px;
+    top: -30px;
+    transition:all .2s ease-in;
+}
+
+.logo:hover span#three {
+    top: 15px;
+    transition:all .2s ease-in;
+}
+
+header ul.user-action {
+    text-align: right;
+}
+
+header ul.user-action button {
+    background: none;
+    border: none;
+}
+
+header ul.user-action {
+    padding: 0;
+    margin: 0;
+}
+
+header ul.user-action li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+span.cart-qty {
+    background: #000;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 10px;
+}
+
+ul.main_navigation {
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul.main_navigation li {
+    display: inline-block;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 2px solid #0000;
+    padding-bottom: 5px;
+    transition: all .2s ease-in;
+}
+
+ul.main_navigation li a {
+    color: #42495B;
+}
+
+ul.main_navigation li:hover {
+    border-bottom: 2px solid #fdb165;
+    transition: all .2s ease-in;
+}
+
+ul.main_navigation li a {
+    text-decoration: none;
+}
+
+/** Categories Before Footer **/
+a.category_card {
+    background: #f2f6ff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/** Footer Styles **/
+.footer-container {
+    border-radius: 5px 5px 0px 0px;
+    padding: 30px 35px;
+    background: #fdb165;
+}
+
+.footer-wrapper {margin-top: 20px;}
+
+ul#footer-links {
+    padding: 0;
+    margin: 0;
+}
+
+ul#footer-links h3 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+ul#footer-links li a {
+    color: #fff;
+}
+
+.newsletter-form {
+    background: #F2F6FF;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 10px;
+}
+
+.newsletter-form h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.newsletter-form input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+
+.newsletter-form button {
+    width: 65%;
+    background: #5FD4A6;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.newsletter-form p {
+    margin: 30px 0px;
+}
+
+.newsletter-form span {
+    display: block;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}
+.footer-wrapper .logo_text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-wrapper .logo {
+    margin-top: 40px;
+}
+
+p.copyright_text {
+    color: #fff;
+    margin: 0;
+    margin-top: 12px;
+}
+
