@@ -8,6 +8,9 @@
     <!-- Stylesheets Attached -->
     <link rel="stylesheet" href="css/plugins.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- End Stylesheets Attached -->
 </head>
 <body>
@@ -43,6 +46,10 @@
                 <div class="row align-items-center">
                     <div class="col-md-3">
                         <button id="search"><img src="img/icons/search.svg" alt="search"></button>
+                        <div class="search-area" style="display: none;">
+                            <input type="text" name="s" placeholder="Search Here">
+                            <button id="do_search"><i class="lni lni-arrow-right"></i></button>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="logo">
@@ -77,12 +84,56 @@
                 </div>
             </div>
         </header>
+
+        <!-- Mobile Header -->
+        <div class="mobile-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="logo">
+                            <div class="logo-comp">
+                                <span id="one"><img src="img/icons/logo-comp/1.svg" alt="logo-comp-1"></span>
+                                <span id="two"><img src="img/icons/logo-comp/2.svg" alt="logo-comp-2"></span>
+                                <span id="three"><img src="img/icons/logo-comp/3.svg" alt="logo-comp-3"></span>
+                            </div>
+                            <a href="#" class="logo_text">agadi</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <ul class="user-action">
+                            <li><button class="account"><img src="img/icons/account.svg" alt="login-register"></button></li>
+                            <li><button id="account"><img src="img/icons/cart.svg" alt="cart"></button>
+                                <span class="cart-qty">02</span>
+                            </li>
+                            <li>
+                                <button class="menu"><i class="lni lni-menu"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Mobile Header -->
         <!-- Header Main End -->
+        <!-- Main Content -->
+        <div id="content">
+
+        </div>
+        <!-- End Main Content -->
         <!-- Footer Start -->
         <div class="categories-wrapper">
             <div class="container">
                 <div class="categories">
-                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category <i><img src="img/icons/arrow.svg" alt=""></i></a>
+                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category Name<i><img src="img/icons/arrow.svg" alt=""></i></a>
+                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category Name<i><img src="img/icons/arrow.svg" alt=""></i></a>
+                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category Name<i><img src="img/icons/arrow.svg" alt=""></i></a>
+                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category Name<i><img src="img/icons/arrow.svg" alt=""></i></a>
+                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category Name<i><img src="img/icons/arrow.svg" alt=""></i></a>
+                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category Name<i><img src="img/icons/arrow.svg" alt=""></i></a>
+                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category Name<i><img src="img/icons/arrow.svg" alt=""></i></a>
+                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category Name<i><img src="img/icons/arrow.svg" alt=""></i></a>
+                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category Name<i><img src="img/icons/arrow.svg" alt=""></i></a>
+                    <a class="category_card" href="#"><img src="img/icons/demo-icon.svg" alt="cat-icon">Category Name<i><img src="img/icons/arrow.svg" alt=""></i></a>
                 </div>
             </div>
         </div>
@@ -146,6 +197,42 @@
         </div>
         <!-- Footer End -->
     </div>
+    <!-- Modal and Side Drawers -->
+    <div class="opacity-filter" style="display:none"></div>
+    <div class="side-drawer" style="display: none;" id="login-drawer">
+        <div class="logo">
+            <div class="logo-comp">
+                <span id="one"><img src="img/icons/logo-comp/1.svg" alt="logo-comp-1"></span>
+                <span id="two"><img src="img/icons/logo-comp/2.svg" alt="logo-comp-2"></span>
+                <span id="three"><img src="img/icons/logo-comp/3.svg" alt="logo-comp-3"></span>
+            </div>
+        </div>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#login" role="tab" aria-controls="nav-home" aria-selected="true">Login</a>
+              <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#register" role="tab" aria-controls="nav-profile" aria-selected="false">Register</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            
+            <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="nav-home-tab">
+                <form action="#">
+                    <input type="text" placeholder="Enter Username Here" name="username" required>
+                    <input type="password" placeholder="Enter Password Here" required>
+                    <input type="submit" value="Login" name="login">
+                </form>
+            </div>
+            <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <form action="#">
+                    <input type="text" placeholder="Enter Username Here" name="username" required>
+                    <input type="email" placeholder="Enter Email Here" name="email" required>
+                    <input type="password" placeholder="Enter Password Here" required>
+                    <input type="submit" value="Register" name="register">
+                </form>
+            </div>
+          </div>
+    </div>
+    <!-- End Modal and Side Drawers -->
     <!-- Scripts Attached -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>

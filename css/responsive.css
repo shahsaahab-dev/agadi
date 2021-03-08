@@ -1,0 +1,21 @@
+@media screen and (max-width:768px){
+    .mobile-header{
+        display:block;
+    }
+    header{
+        display:none;
+    }
+
+    .categories {
+        grid-template-columns: repeat(2,1fr);
+        padding: 10px;
+    }
+    
+    .footer-wrapper {
+        text-align: center;
+    }
+    
+    ul#footer-links {
+        margin-bottom: 25px;
+    }
+}
